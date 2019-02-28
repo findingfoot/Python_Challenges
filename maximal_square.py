@@ -20,5 +20,5 @@ def MaximalSquare(strArr):
     return base_value * base_value
 
 
-# keep this function call here
+
 print (MaximalSquare(input()))
