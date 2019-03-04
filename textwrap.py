@@ -35,7 +35,7 @@ import textwrap
 
 def wrap(string, max_width):
     # return '\n'.join(string[i:i+max_width] for i in range(0, len(string), max_width)) #solution 1
-    return '\n'.join(textwrap.wrap(string, max_width))  # solution 2 using inbuilt methods
+    return '\n'.join(textwrap.wrap(string, max_width))   # solution 2 using inbuilt methods
 
 
 if __name__ == '__main__':
