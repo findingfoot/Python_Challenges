@@ -34,13 +34,14 @@ telephone = [
 def home():
     return "<h1>Creating a Flask Prototype</h1><p>This site is a prototype API for seeing how an API is created from scratch.</p>"
 
-@app.route("/api/telephone/all", methods = ["GET"])
+
+@app.route("/api/v1/resources/telephone/all", methods=["GET"])
 
 def api_all():
     return jsonify(telephone)
 
 #adding data filtering ability to our code
-@app.route("/api/telephone", methods = ["GET"])
+@app.route("/api/v1/resources/telephone", methods=["GET"])
 def api_id():
     # Check if an ID was provided as part of the URL.
     # If ID is provided, assign it to a variable.
